@@ -55,8 +55,8 @@ def telegram_sender(token: str, chat_id: int):
 
                 if master_process:
                     end_time = datetime.datetime.now()
-                    contents = ['🎉 %s' % full_func_name,
-                                '💻 %s' % host_name,
+                    contents = ['💻 %s' % host_name,
+                                '🎉 %s' % full_func_name,
                                 '⏳ %s' % start_time.strftime(DATE_FORMAT),
                                 '⌛ %s' % end_time.strftime(DATE_FORMAT)]
 
@@ -69,8 +69,8 @@ def telegram_sender(token: str, chat_id: int):
                 end_time = datetime.datetime.now()
                 elapsed_time = end_time - start_time
 
-                contents = ['☠️ %s' % full_func_name,
-                            '💻 %s' % host_name,
+                contents = ['💻 %s' % host_name,
+                            '☠️ %s' % full_func_name,
                             '⏳ %s' % start_time.strftime(DATE_FORMAT),
                             '⌛ %s' % end_time.strftime(DATE_FORMAT),]
                 text = '\n'.join(contents)
